@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prakhar's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <section class="menu">
+        <button id="close-Menu">&times;</button>
+        <nav>
+            <ul> 
+            <li><a href="#about-me">About Me</a></li>
+            <li><a href="#technologies">Technologies</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#social-linkss">Contact</a></li>
+            </ul>
+        </nav>
+    </section>
+    <header>
+        <nav class="default-nav">
+            <a href="#about-me">About Me</a><a href="#technologies">Technologies</a><a href="#projects">Projects</a><a href="#social-linkss">Contact</a>
+        </nav>
+        <nav class="mobile-nav">
+            <button id="Menu-button">Menu</button>
+        </nav>
+    </header>
+<main class="container">
+<article class="intro">
+    <img id="profile-image" src="/Assets/Profile Picture/ye noone hai with background.png" alt="Prakhar Profile Image"  >
+    <h1>Hi,I'm Prakhar</h1>
+    <p>I am a <span id="dynamic-text" class="dynamic-text-color">Web-Developer</span></p>
+    <p class="social-links">
+        <a href=https://twitter.com/PrakharB__ target="_blank"><img src="/Assets/Social Media Icons/free-twitter-logo-icon-2429-thumb.png" alt="Twitter image"></a> 
+        <a href=https://www.linkedin.com/in/prakhar-bansal-2035351b1/__ target="_blank"><img src="Assets/Social Media Icons/145807.png" alt="linkedin image" ></a> 
+        <a href=https://mail.google.com/mail/u/0/#inbox target="_blank"><img src="Assets/Social Media Icons/gmail.png" alt="Gmail-logo" ></a>   
+    </p>
+</article>
+<section id="about-me">
+    <h2>About Me</h2>
+    <p>My name is Prakhar and I am a full stack developer. Learned About Web Dev in my freshman year in hope to make a quick buck which led
+        to building projects , meeting awesome people to learn from . Apart from Web dev I dwell into design and psychology which has helped me in delivering
+        better understanding of the user problems thus delivering better solutions.
+    </p>    
+</section>
+<section id="technologies">
+    <h2>Technologies</h2>
+    <!-- <ul>
+         <li>HTML5</li>
+         <li>CSS3</li>
+         <li>JS</li>
+    </ul> -->
+    <table>
+        <tr>
+            <th>Frontend</th> <!--defines the columns--> 
+            <th>Backend</th>
+            <th>Database</th>
+        </tr>
+        <tr>
+            <td>HTML</td>
+            <td>NodeJS</td>
+            <td>MYSQL</td>
+        </tr>
+        <tr>
+            <td>CSS</td>
+            <td>Rails</td>
+            <td>Mongo DB</td>
+        </tr>
+        <tr>
+            <td>JS</td>
+            <td>Asp.net</td>
+            <td>Postgress</td>
+        </tr>
+        
+    </table>
+</section>
+<section id="projects">
+    <h2>Projects</h2>
+    <ol>
+        <li>Project1</li>
+        <li>Project2</li>
+        <li>Project3</li>
+    </ol>
+</section>
+   <div id="contact-me" method="POST" data-netlify="true">
+    <form name="contact" id="contact" method="post">
+        <h2>Contact Me</h2>
+        <div>
+            <label for="firstname">First name</label>
+            <input type="text" name="firstName" id="firstName" required>
+        </div>
+        <div>
+            <label for="Lastname">Last name</label>
+            <input type="text" name="LastName" id="LastName" required>
+        </div>
+        <div>
+            <label for="Message">Message</label>
+            <textarea name="Message" id="Message" cols="30" rows="10"></textarea>
+        </div>
+        <button type="submit">Send</button>
+    </form>
+   </div>
+       
+ <footer>
+Made With ♥ by Prakhar ©2022
+<section class="social-links" id="social-links">
+<!-- 
+      <a href=https://twitter.com/PrakharB__ target="_blank"><img src="/Assets/Social Media Icons/free-twitter-logo-icon-2429-thumb.png" alt="Twitter image" width="36px" height="36px"></a> 
+      <a href=https://www.linkedin.com/in/prakhar-bansal-2035351b1/__ target="_blank"><img src="Assets/Social Media Icons/145807.png" alt="linkedin image" width="36px" height="36px"></a> 
+      <a href=https://mail.google.com/mail/u/0/#inbox target="_blank"><img src="Assets/Social Media Icons/gmail.png" alt="Gmail-logo" width="32px" height="32px"></a>  -->
+  </section>
+ </footer>   
+</main>   
+<script src="main.js"></script>
+<script src="menu.js"></script>
+</body>
+</html>

@@ -1,0 +1,171 @@
+* {
+    box-sizing: border-box;
+}
+body{
+    margin: 0px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+html{
+    scroll-behavior: smooth;
+ }
+
+header{
+    padding: 16px;
+    position: sticky;
+    top: 0;
+    /* border: 2px solid black; */
+    background-color: azure;
+    border-bottom: 4px solid black;
+}
+
+nav a{
+    text-decoration: none;
+}
+header nav a{
+    margin-right: 16px;
+}
+
+header nav a:last-child{
+    margin-right: revert;
+}
+
+
+header nav a:hover{
+    text-decoration: underline;
+}
+
+footer{
+    padding: 16px;
+    text-align: center;
+    border-top: 4px solid black;
+}
+.container{
+    padding: 16px;
+}
+
+.container section h2{
+    text-align: center;
+}
+
+.intro{
+    margin: -16px;
+    padding: 16px;
+    background-color: #F4BABC;
+    color: white;
+    text-align: center;
+}
+
+#profile-image{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    border: 5px solid #1d1c1c;
+    transition: all 1s ease-in-out;
+}
+#profile-image:hover{
+   transform: rotate(360deg);
+}
+
+.social-links img{
+    height: 36px;
+    width: 36px;
+}
+
+.social-links a{
+    margin: auto 16px;
+}
+
+table,
+tr,
+td,
+th {
+    border: 1px solid;
+    border-collapse: collapse;
+  
+}
+
+th,td{
+    padding: 10px;
+    
+}
+table{
+    width: 100%s;
+}
+
+p{
+    font-size: 1.3rem;
+}
+
+.dynamic-text-color{
+    color:#1d1c1c;
+}
+ 
+.mobile-nav,section.menu{
+    display: none; 
+}
+
+@media  (width < 500px)  {
+    .default-nav {
+        display: none;
+    }
+
+    .mobile-nav{
+        display: revert;
+    }
+    
+    #Menu-button{
+            display: block;
+            background-color: #F4BABC;
+            margin-left: auto;
+            border-radius: 8px;
+    }
+    
+    section.menu{
+        display: revert;
+        height: 0;
+        width: 100%;
+        overflow: hidden;
+        position: fixed;
+        background-color: azure;
+        top: 0;
+        z-index: 1;
+    }
+
+    section.menu ul{
+        list-style: none;
+        font-size: 1.5rem;
+    }
+    section.menu ul>li{
+        margin-bottom: 16px;
+    }
+
+    section.menu nav{
+        margin-top: 48px;
+    }
+
+    #close-Menu{
+        position: absolute;
+        right: 16px;
+        font-size: x-large;
+        border: none;
+        top: 16px;
+    }
+}
+
+form#contact{
+    max-width: 400px;
+    margin: auto;
+    padding: 16px;
+    border: 1px solid black;
+    border-radius: 16px;
+}
+
+#contact label{
+    display: block;
+    font-weight: 600;
+}
+
+#contact input ,#contact textarea,#contact button{
+width: 100%;
+}
